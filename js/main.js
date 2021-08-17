@@ -26,6 +26,7 @@ $(document).ready(function () {
     $('#asdfa').scroll(function(){
         showImages('.photo');
     });
+
     //$(".photo-row").width($(window).width());
     /*var counter = 0;
     var lastPointScroll = 0;
