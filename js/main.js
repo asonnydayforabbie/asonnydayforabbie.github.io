@@ -1,10 +1,12 @@
 $(document).ready(function () {
     $(".parallax__cover").width($(window).width());
     $(".parallax__cover__mobile").width($(window).width());
+    $(".last-page").height($(window).height());
 
     $(window).on('resize', function() {
         $(".parallax__cover").width($(window).width());
         $(".parallax__cover__mobile").width($(window).width());
+        $(".last-page").height($(window).height());
     });
 
     function showImages(el) {
@@ -24,6 +26,7 @@ $(document).ready(function () {
     $('#asdfa').scroll(function(){
         showImages('.photo');
     });
+
     //$(".photo-row").width($(window).width());
     /*var counter = 0;
     var lastPointScroll = 0;

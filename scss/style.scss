@@ -9,6 +9,16 @@ $old-cover-bg: #2D112B;
 $new-main-bg: #FFFFFF;
 $new-cover-bg: #FFFAAA;
 
+@font-face {
+    font-family: "Meritta";
+    src: url("../assets/font/meritta.woff");
+}
+
+@font-face {
+    font-family: "Soage";
+    src: url("../assets/font/Soage.ttf");
+}
+
 *{
   box-sizing: border-box;
 }
@@ -16,6 +26,23 @@ $new-cover-bg: #FFFAAA;
 html,
 body{
   background-color: $new-main-bg;
+}
+
+.caption-title {
+    font-family: 'Meritta';
+    font-size: 200px;
+    line-height: 125px;
+}
+
+.last-caption-title {
+    font-family: 'Meritta';
+    font-size: 100px;
+    line-height: 50px;
+}
+
+.caption {
+    font-family: 'Soage';
+    font-size: 25px;
 }
 
 .parallax {
@@ -67,18 +94,38 @@ body{
     margin: 0 auto;
     width: 100%;
     margin-bottom: 150px;
+    text-align: center;
 }
 
 .photo-col {
-    float: left;
+    float: none;
+    display: table-cell;
     width: 50%;
     padding: 30px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .photo-col-r {
-    float: right;
+    float: none;
+    display: table-cell;
     width: 50%;
     padding: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.last-page {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.last-page-div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
 }
 
 .photo {
@@ -188,5 +235,19 @@ $parallax__layers: 3;
 
     .photo-row {
         margin-bottom: 300px;
+    }
+
+    .caption-title {
+        font-size: 175px;
+        line-height: 100px;
+    }
+
+    .last-caption-title {
+        font-size: 80px;
+        line-height: 50px;
+    }
+
+    .caption {
+        font-size: 35px;
     }
 }
